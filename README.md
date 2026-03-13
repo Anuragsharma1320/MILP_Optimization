@@ -1,4 +1,4 @@
-# Integration of different distributed resources PV-Wind-BESS-EV-System-Scheduling
+# Integration of different distributed resources PV-Wind-BESS-EV-System-day-ahead-Scheduling
 This project implements a Mixed-Integer Linear Programming (MILP) controller for optimal energy dispatch in a renewable-based microgrid. It schedules power flows between PV, Wind, BESS, EV (V2G), and the grid to minimize operational cost while maintaining SOC constraints, EV availability, and renewable integration targets.
 
 💼 Portfolio Highlights
