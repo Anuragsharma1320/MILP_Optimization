@@ -19,20 +19,20 @@ Price_buy = Price
 Price_sell = 0.60 * Price
 
 # --- Parameters ---
-BESS_capacity = 150
+BESS_capacity = 100
 SOC_min = 0.20 * BESS_capacity
 SOC_max = 0.90 * BESS_capacity
 eta_ch, eta_dis = 0.90, 0.90
-P_bess_max = 75
+P_bess_max = 50
 
-EV_capacity = 200
+EV_capacity = 160
 EV_SOC_max = 0.95 * EV_capacity
-EV_P_max = 100
+EV_P_max = 80
 eta_ev_ch, eta_ev_dis = 0.95, 0.95
 
 # Initial SoCs
 E0_BESS = 0.50 * BESS_capacity
-E0_EV = 0.80 * EV_capacity
+E0_EV = 0.60 * EV_capacity
 
 # --- Availability Windows ---
 time_hours = np.arange(n) * dt
