@@ -2,6 +2,12 @@ import numpy as np
 import pandas as pd
 
 def generate_heat_demand(year=2023, annual_demand=100e6):
+
+
+    if __name__ == "__main__":
+        df = generate_heat_demand()
+        df.to_csv("heat_demand.csv", index=False)
+        print("Heat demand profile generated and saved as heat_demand.csv")
     # Time index
     hours = pd.date_range(f"{year}-01-01", periods=8760, freq="H")
 
@@ -39,9 +45,3 @@ def generate_heat_demand(year=2023, annual_demand=100e6):
     })
 
     return df
-
-
-if __name__ == "__main__":
-    df = generate_heat_demand()
-    df.to_csv("heat_demand.csv", index=False)
-    print("Heat demand profile generated and saved as heat_demand.csv")
