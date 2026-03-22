@@ -17,6 +17,8 @@ def generate_heat_demand(year=2023, annual_demand=100e6):
     T_out = T_mean + T_amp * np.sin(2 * np.pi * (hours.dayofyear / 365))
     T_out += np.random.normal(0, 2, size=8760)
 
+
+
     # Heating demand (degree-day model)
     T_base = 18
     Q_raw = np.maximum(0, T_base - T_out)
